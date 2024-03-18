@@ -1,0 +1,129 @@
+<%- include('../partials/adminHeader') %>
+    <!-- =============================================== -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Add New Category
+        </h1>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Add New Category</a></li>
+        </ol>
+      </section>
+
+
+      <!-- Main content -->
+      <section class="content">
+
+        <!-- Basic Forms -->
+        <div class="box box-default">
+          <div class="box-header with-border">
+            <!-- <h6 class="card-subtitle">Drug Informations</h6> -->
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <div class="row">
+              <div class="col">
+                <form novalidate="" action="view-category" method="POST" onsubmit="return validate()">
+
+                  <div class="form-group">
+                    <h5>Category Name <span class="text-danger">*</span></h5>
+                    <div class="controls">
+                      <input type="text" name="catname" class="form-control" required=""
+                        data-validation-required-message="This field is required">
+                    </div>
+                  </div>
+
+                 
+
+
+
+                  <!--
+					<div class="form-group">
+						<h5>Description <span class="text-danger">*</span></h5>
+						<div class="controls">
+						<textarea name="des" id="des" class="form-control" required="" placeholder="Textarea text"></textarea> </div>
+					</div>
+
+					-->
+                  </br>
+
+
+
+                  <div class="text-xs-right">
+                    <button type="submit" name="btn_sub" class="btn btn-info">Submit</button>
+                  </div>
+
+                </form>
+
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.box-body -->
+        </div>
+        <!-- /.box -->
+
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+      <div class="pull-right d-none d-sm-inline-block">
+      </div>Copyright &copy; 2020 . All Rights Reserved.
+    </footer>
+
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Create the tabs -->
+      <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- Home tab content -->
+        <div class="tab-pane" id="control-sidebar-home-tab">
+
+
+          <!-- /.control-sidebar-menu -->
+
+        </div>
+        <!-- /.tab-pane -->
+        <!-- Stats tab content -->
+        <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+        <!-- /.tab-pane -->
+        <!-- Settings tab content -->
+        <div class="tab-pane" id="control-sidebar-settings-tab">
+
+        </div>
+        <!-- /.tab-pane -->
+      </div>
+   
+      
+  <script>
+  function validate() {
+    var categoryInput = document.getElementById("category").value;
+    if (!isNaN(categoryInput)) {
+      alert("Please enter a valid category!");
+      return false;
+    }
+    if (/[^a-zA-Z0-9]/.test(categoryInput)) {
+      alert("Error: Category name should not contain special characters.");
+      return false;
+    }
+  
+   
+    return true;
+  }
+</script>
+
+<%- include('../partials/adminFooter') %>

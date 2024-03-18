@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images\favicon.ico">
+
+    <title>Medicine</title>
+  
+	<!-- Bootstrap 4.0-->
+	<link rel="stylesheet" href="/admin_assets/vendor_components/bootstrap/dist/css/bootstrap.min.css">
+	
+	<!-- Bootstrap 4.0-->
+	<link rel="stylesheet" href="/admin_assets/vendor_components/bootstrap/dist/css/bootstrap-extend.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/admin_assets/vendor_components/font-awesome/css/font-awesome.min.css">
+
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="/admin_assets/vendor_components/Ionicons/css/ionicons.min.css">		
+
+	<!-- Theme style -->
+	<link rel="stylesheet" href="/admin_css/master_style.css">
+
+	<!-- bonitoadmin Skins. Choose a skin from the css/skins
+	   folder instead of downloading all of them to reduce the load. -->
+	<link rel="stylesheet" href="/admin_css/skins/_all-skins.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- google font -->
+	<link href="css.css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  
+<header class="main-header">
+    <!-- Logo -->
+    <a href="index" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>T</b></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Medicart</b> Digital</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+		  <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="/admin_images/user2-160x160.jpg" class="user-image rounded" alt="User Image">
+            </a>
+            <ul class="dropdown-menu scale-up">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="/dmin_images/user2-160x160.jpg" class="rounded float-left" alt="User Image">
+
+                <p>
+                  Medicart Digital
+                  <small>..................</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-block btn-primary">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="../public/index" class="btn btn-block btn-danger">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- 
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope"></i>
+              <span class="label label-success">5</span>
+            </a>
+            <ul class="dropdown-menu scale-up">
+              <li class="header">You have 5 messages</li>
+              <li>
+           
+                <ul class="menu inner-content-div">
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="images\user2-160x160.jpg" class="rounded-circle" alt="User Image">
+                      </div>
+                      <div class="mail-contnet">
+                         <h4>
+                          Lorem Ipsum
+                          <small><i class="fa fa-clock-o"></i> 15 mins</small>
+                         </h4>
+                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                      </div>
+                    </a>
+                  </li>
+                 
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="images\user3-128x128.jpg" class="rounded-circle" alt="User Image">
+                      </div>
+                      <div class="mail-contnet">
+                         <h4>
+                          Nullam tempor
+                          <small><i class="fa fa-clock-o"></i> 4 hours</small>
+                         </h4>
+                         <span>Curabitur facilisis erat quis metus congue viverra.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="images\user4-128x128.jpg" class="rounded-circle" alt="User Image">
+                      </div>
+                      <div class="mail-contnet">
+                         <h4>
+                          Proin venenatis
+                          <small><i class="fa fa-clock-o"></i> Today</small>
+                         </h4>
+                         <span>Vestibulum nec ligula nec quam sodales rutrum sed luctus.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="images\user3-128x128.jpg" class="rounded-circle" alt="User Image">
+                      </div>
+                      <div class="mail-contnet">
+                         <h4>
+                          Praesent suscipit
+                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                         </h4>
+                         <span>Curabitur quis risus aliquet, luctus arcu nec, venenatis neque.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="images\user4-128x128.jpg" class="rounded-circle" alt="User Image">
+                      </div>
+                      <div class="mail-contnet">
+                         <h4>
+                          Donec tempor
+                          <small><i class="fa fa-clock-o"></i> 2 days</small>
+                         </h4>
+                         <span>Praesent vitae tellus eget nibh lacinia pretium.</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">See all e-Mails</a></li>
+            </ul>
+          </li>-->
+          <!--
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell"></i>
+              <span class="label label-warning">7</span>
+            </a>
+            <ul class="dropdown-menu scale-up">
+              <li class="header">You have 7 notifications</li>
+              <li>
+                
+                <ul class="menu inner-content-div">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> Curabitur id eros quis nunc suscipit blandit.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-warning text-yellow"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-red"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-shopping-cart text-green"></i> In gravida mauris et nisi
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> Praesent eu lacus in libero dictum fermentum.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> Nunc fringilla lorem 
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li> 
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-flag"></i>
+              <span class="label label-danger">6</span>
+            </a>
+            <ul class="dropdown-menu scale-up">
+              <li class="header">You have 6 tasks</li>
+              <li>
+                
+                <ul class="menu inner-content-div">
+                  <li>
+                    <a href="#">
+                      <h3>
+                        Lorem ipsum dolor sit amet
+                        <small class="pull-right">30%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-aqua" style="width: 30%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">30% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">
+                      <h3>
+                        Vestibulum nec ligula
+                        <small class="pull-right">20%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-danger" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">
+                      <h3>
+                        Donec id leo ut ipsum
+                        <small class="pull-right">70%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-light-blue" style="width: 70%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">70% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                 
+                  <li>
+                    <a href="#">
+                      <h3>
+                        Praesent vitae tellus
+                        <small class="pull-right">40%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-yellow" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">40% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">
+                      <h3>
+                        Nam varius sapien
+                        <small class="pull-right">80%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-red" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">80% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">
+                      <h3>
+                        Nunc fringilla
+                        <small class="pull-right">90%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-primary" style="width: 90%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">90% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </li>
+              <li class="footer">
+                <a href="#">View all tasks</a>
+              </li>
+            </ul>
+          </li>-->
+		  
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-cog fa-spin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <!--<div class="image float-left">
+          <img src="..\images\user2-160x160.jpg" class="rounded" alt="User Image">
+        </div>-->
+        <div class="info float-left">
+          <p>Medicart Dashboard</p>
+          <!--<a href="#"><i class="fa fa-circle text-success"></i> Online</a>-->
+        </div>
+		  <!-- search form -->
+      <form  class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      </div>
+      
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        
+      
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>Dashboard</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+           
+            <li><a href="/admin"><i class="fa fa-circle-o"></i>View Dashboard</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-th"></i>
+            <span>Medicines</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/admin/add-product"><i class="fa fa-circle-o"></i> Add Medicine</a></li>
+            <li><a href="/admin/view-product"><i class="fa fa-circle-o"></i> View Medicines</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>Customers</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="/admin/view-user"><i class="fa fa-circle-o"></i> View Customers</a></li>
+            <!--<li><a href="view_needyuser.php"><i class="fa fa-circle-o"></i> View Need Customers</a></li>-->
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Category</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+         
+            <li><a href="/admin/add-category"><i class="fa fa-circle-o"></i> view Category</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Order Management</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+         
+            <li><a href="/admin/order-management"><i class="fa fa-circle-o"></i> View Orders</a></li>
+          </ul>
+        </li>
+        <!-- <li class="treeview">
+          <a href="#">
+            <i class="fa fa-edit"></i> <span>Medicine Sellers</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="view_seller.php"><i class="fa fa-circle-o"></i> View Sellers</a></li>
+            <li><a href="view_ads.php"><i class="fa fa-circle-o"></i> seller Ads</a></li>
+          </ul>
+        </li>
+       <li class="treeview">
+          <a href="#">
+            <i class="fa fa-table"></i> <span>Delivery</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="view_order.php"><i class="fa fa-circle-o"></i> Medicine Delivery</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="../public/index.php">
+            <i class="fa fa-table"></i> <span>Log Out</span>
+          </a>
+        </li> -->
+              
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+    <div class="sidebar-footer">
+		<!-- item-->
+		<a href="" class="link" data-toggle="tooltip" title="" data-original-title="Settings"><i class="fa fa-cog fa-spin"></i></a>
+		<!-- item-->
+		<a href="" class="link" data-toggle="tooltip" title="" data-original-title="Email"><i class="fa fa-envelope"></i></a>
+		<!-- item-->
+		<a href="" class="link" data-toggle="tooltip" title="" data-original-title="Logout"><i class="fa fa-power-off"></i></a>
+	</div>
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        View Users
+      </h1>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Users</a></li>
+        <li class="breadcrumb-item active" >View Users</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-12">
+          <!-- /.box -->
+         
+          <div class="box">
+            <div class="box-header">
+              <!--<h3 class="box-title">Hover Export Data Table</h3>-->
+              <h6 class="box-subtitle">User Information</h6>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example" class="table table-bordered table-hover display nowrap margin-top-10 table-responsive">
+                
+              
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Name</th>
+						<th>Email Id</th>
+						<th>Phone No</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				 <tbody>
+
+          <% user.forEach(function(user,index) { %>
+            <tr>
+              <td> <%=index+1 %> </td>
+              <td><%= user.name %></td> 
+              <td><%= user.email %></td>
+              <td><%= user.mobile %></td>
+              <td>
+                <% if (user.blocked) { %>
+                  <a href="#" class="unblock-link" data-user-id="<%= user._id %>"><span class="badge badge-warning">Unblock</span></a>
+                <% } else { %>
+                  <a href="#" class="block-link" data-user-id="<%= user._id %>"><span class="badge badge-danger">Block</span></a>
+                <% } %>
+              </td>
+              
+              
+ </tr>
+            <% }) %>			
+										
+				</tbody>
+				<!-- <tfoot>
+					<tr>
+                        <th>Name</th>
+						<th>Place</th>
+						<th>Rooms</th>
+						<th>Latitude</th>
+						<th>Longitude</th>
+						<th>Image</th>
+						<th>Action</th>
+					</tr>
+				</tfoot> -->
+			</table>
+
+              
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->          
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  
+  
+  <script>
+    $(document).ready(function() {
+      $('#example').DataTable({
+        "paging": true,  // Enable pagination
+        "lengthChange": false,  // Disable items per page change
+        "searching": false,  // Disable search box
+        "ordering": true,  // Enable column sorting
+        "info": true,  // Show page info
+        "autoWidth": false,  // Disable auto column width calculation
+      });
+    });
+  </script>
+
+
+  <script>
+   $(document).ready(function() {
+  $('.block-link, .unblock-link').click(function(e) {
+    e.preventDefault();
+
+    var link = $(this);
+    var userId = link.data('user-id');
+    var action = link.hasClass('block-link') ? 'block' : 'unblock';
+
+    $.ajax({
+      url: '/admin/' + action + '-users/' + userId,
+      type: 'GET',
+      success: function(response) {
+        // Update the UI based on the response
+        if (action === 'block') {
+          link.replaceWith('<span class="badge badge-warning">Unblock</span>');
+        } else {
+          link.replaceWith('<span class="badge badge-danger">Block</span>');
+        }
+        location.reload()
+      },
+      error: function(xhr, status, error) {
+        // Handle the error response
+        console.log('Error ' + action + 'ing user: ' + error);
+      }
+    });
+  });
+});
+
+
+  </script>
+	
+  <%- include('../partials/adminFooter') %>
+
